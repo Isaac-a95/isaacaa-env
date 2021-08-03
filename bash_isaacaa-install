@@ -29,8 +29,9 @@ update-isaacaa () {
    copy-isaacaa
 }
 
-if [ ! -f ~/.isaacaa ]; then
-   install-isaacaa
+if [ ! -d ~/.isaacaa ]; then
+   echo "Run install-isaacaa for installing the environment!"
+   #install-isaacaa
 fi
 
 . ~/.bash_isaacaa-env
