@@ -1,19 +1,22 @@
 #!/bin/bash
-set -e
 
 # Are we correctly installed?
-if [ -f ~/.bash_isaacaa-env ]; then
+if [ ! -f ~/.bash_isaacaa-env ]; then
    echo "My custom environment is not yet installed!"
 
    cd ~ && mkdir .isaacaa && cd .isaacaa && git clone https://github.com/Isaac-a95/isaacaa-env.git .
-else
-   # Check if we are at the lastest possible version
-   cd ~/.isaacaa && git pull origin master
-   cp bash_isaacaa-install ../.bash_isaacaa-install
-   cp vimrc ../.vimrc
-   cp bash_isaacaa-env ../.bash_isaacaa-env
-   cp git-completition.sh ../.git-completition.sh
 fi
+
+# Check if we are at the lastest possible version
+cd ~/.isaacaa && git pull origin master
+#cp bash_isaacaa-install ../.bash_isaacaa-install
+cp vimrc ../.vimrc
+cp bash_isaacaa-env ../.bash_isaacaa-env
+cp git-completition.sh ../.git-completition.sh
+if [ ! -f ~/.vim/bundle/Vundle.vim/README.md ]; then
+   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+vim +PluginInstall +qall
 
 cd ~
 . .bash_isaacaa-env
