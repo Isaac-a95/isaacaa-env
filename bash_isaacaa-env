@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration of the information displayed before $ at the command line
-export PS1='\t \u @ \W $: '
+export PS1="\A [\u@\[$(tput bold)\]\h\[$(tput sgr0)\]:\w]\\$: \[$(tput sgr0)\]"
 
 # We enable grep coloring by defaults
 alias grep='grep -n  --color=auto'
