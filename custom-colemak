@@ -1,0 +1,42 @@
+xkb_symbols "colemak_dh_custom" {
+
+    include "us(colemak_dh)"
+    name[Group1] = "English (Colemak-DH Custom)";
+    //  Alphanumeric section
+    key <TLDE> { [        asciitilde,  grave,        dead_tilde,       asciitilde ] };
+    key <AE01> { [            exclam,      1,        exclamdown,      onesuperior ] };
+    key <AE02> { [                at,      2,         masculine,      twosuperior ] };
+    key <AE03> { [        numbersign,      3,       ordfeminine,    threesuperior ] };
+    key <AE04> { [            dollar,      4,              cent,         sterling ] };
+    key <AE05> { [           percent,      5,          EuroSign,              yen ] };
+    key <AE06> { [       asciicircum,      6,           hstroke,          Hstroke ] };
+    key <AE07> { [         ampersand,      7,               eth,              ETH ] };
+    key <AE08> { [          asterisk,      8,             thorn,            THORN ] };
+    key <AE09> { [         parenleft,      9,    leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE10> { [        parenright,      0,   rightsinglequotemark,  rightdoublequotemark ] };
+    key <AE11> { [        underscore,  minus,            endash,           emdash ] };
+    key <AE12> { [              plus,  equal,          multiply,         division ] };
+    include "level3(ralt_switch)"
+};
+
+xkb_symbols "colemak_dh_iso_custom" {
+
+    include "us(colemak_dh_iso)"
+    name[Group1] = "English (Colemak-DH ISO Custom)";
+    //  Alphanumeric section
+    key <TLDE> { [        asciitilde,  grave,        dead_tilde,       asciitilde ] };
+    key <AE01> { [            exclam,      1,        exclamdown,      onesuperior ] };
+    key <AE02> { [                at,      2,         masculine,      twosuperior ] };
+    key <AE03> { [        numbersign,      3,       ordfeminine,    threesuperior ] };
+    key <AE04> { [            dollar,      4,              cent,         sterling ] };
+    key <AE05> { [           percent,      5,          EuroSign,              yen ] };
+    key <AE06> { [       asciicircum,      6,           hstroke,          Hstroke ] };
+    key <AE07> { [         ampersand,      7,               eth,              ETH ] };
+    key <AE08> { [          asterisk,      8,             thorn,            THORN ] };
+    key <AE09> { [         parenleft,      9,    leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE10> { [        parenright,      0,   rightsinglequotemark,  rightdoublequotemark ] };
+    key <AE11> { [        underscore,  minus,            endash,           emdash ] };
+    key <AE12> { [              plus,  equal,          multiply,         division ] };
+    include "level3(ralt_switch)"
+};
+
