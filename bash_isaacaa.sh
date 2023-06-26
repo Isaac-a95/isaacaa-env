@@ -21,6 +21,6 @@ alias ll='ls -lh'
 set -o vi
 
 # Autocomplete git commands and branch names
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+if [ -f ~/.git_completion.bash ]; then
+  . ~/.git_completion.bash
 fi

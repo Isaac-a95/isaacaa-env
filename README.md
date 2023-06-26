@@ -17,7 +17,7 @@ cp git_completion.sh ~/.git_completion.sh
 chmod u+x  ~/.git_completion.sh
 cp bash_isaacaa.sh ~/.bash_isaacaa.sh
 chmod u+x  ~/.bash_isaacaa.sh
-echo "~/.bash_isaacaa.sh" >> ~/.bashrc
+echo ". ~/.bash_isaacaa.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
 
