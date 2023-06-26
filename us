@@ -955,8 +955,6 @@ xkb_symbols "colemak_dh_custom" {
     key <AE08> { [          asterisk,      8,             thorn,            THORN ] };
     key <AE09> { [         parenleft,      9,    leftsinglequotemark,  leftdoublequotemark ] };
     key <AE10> { [        parenright,      0,   rightsinglequotemark,  rightdoublequotemark ] };
-    key <AE11> { [        underscore,  minus,            endash,           emdash ] };
-    key <AE12> { [              plus,  equal,          multiply,         division ] };
     include "level3(ralt_switch)"
 };
 
@@ -976,8 +974,6 @@ xkb_symbols "colemak_dh_iso_custom" {
     key <AE08> { [          asterisk,      8,             thorn,            THORN ] };
     key <AE09> { [         parenleft,      9,    leftsinglequotemark,  leftdoublequotemark ] };
     key <AE10> { [        parenright,      0,   rightsinglequotemark,  rightdoublequotemark ] };
-    key <AE11> { [        underscore,  minus,            endash,           emdash ] };
-    key <AE12> { [              plus,  equal,          multiply,         division ] };
     include "level3(ralt_switch)"
 };
 
