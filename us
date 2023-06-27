@@ -938,13 +938,15 @@ xkb_symbols "colemak_dh_iso" {
 
     include "level3(ralt_switch)"
 };
+// --> IAA
 
 xkb_symbols "colemak_dh_custom" {
 
     include "us(colemak_dh)"
     name[Group1] = "English (Colemak-DH Custom)";
+    // ESC in Keychron K6 are the tildes
+    key <ESC> { [        asciitilde,  grave,        dead_tilde,       asciitilde ] };
     //  Alphanumeric section
-    key <TLDE> { [        asciitilde,  grave,        dead_tilde,       asciitilde ] };
     key <AE01> { [            exclam,      1,        exclamdown,      onesuperior ] };
     key <AE02> { [                at,      2,         masculine,      twosuperior ] };
     key <AE03> { [        numbersign,      3,       ordfeminine,    threesuperior ] };
@@ -955,6 +957,9 @@ xkb_symbols "colemak_dh_custom" {
     key <AE08> { [          asterisk,      8,             thorn,            THORN ] };
     key <AE09> { [         parenleft,      9,    leftsinglequotemark,  leftdoublequotemark ] };
     key <AE10> { [        parenright,      0,   rightsinglequotemark,  rightdoublequotemark ] };
+    // We relegate the ESC behaviour to the CAPS key
+    key <CAPS> { [         BackSpace, Escape,         Caps_lock,        BackSpace ] };
+
     include "level3(ralt_switch)"
 };
 
@@ -974,8 +979,14 @@ xkb_symbols "colemak_dh_iso_custom" {
     key <AE08> { [          asterisk,      8,             thorn,            THORN ] };
     key <AE09> { [         parenleft,      9,    leftsinglequotemark,  leftdoublequotemark ] };
     key <AE10> { [        parenright,      0,   rightsinglequotemark,  rightdoublequotemark ] };
+    // We relegate the ESC behaviour to the CAPS key
+    key <CAPS> { [         BackSpace, Escape,         Caps_lock,        BackSpace ] };
+
     include "level3(ralt_switch)"
 };
+
+// <-- IAA
+
 
 
 
